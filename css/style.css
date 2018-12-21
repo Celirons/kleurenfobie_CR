@@ -334,13 +334,19 @@ h4 {
   margin-top: 40px;
 }
 
+@media (min-width: 992px) {
+  .titelzelfhulp h5 {
+    margin-top: 90px;
+  }
+}
+
 .titelzelfhulp p {
   margin-bottom: 40px;
 }
 
 @media (min-width: 992px) {
   .titelzelfhulp p {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 
