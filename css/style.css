@@ -135,7 +135,6 @@ li a {
   border-bottom: 1px solid transparent;
 }
 
-/* Change the link color on hover */
 li a:hover {
   border-bottom: #0027FF;
   color: white;
