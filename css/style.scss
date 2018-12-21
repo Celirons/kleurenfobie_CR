@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone');
+
+$color1: #000000;
+$color2: #0027FF;
+$color3: #F4FD02;
+$color4: rgb(245,245,248);
+
+$alpha1: 0.5;
+$alpha2: 1;
+
+$fontset1: 'Julius Sans One', sans-serif;
+$fontset2: 'Lato', sans-serif;
+$fontset3: 'Antic Didone', serif;
+
+$breekpunt1: 560px;
+$breekpunt2: 768px;
+$breekpunt3: 992px;
+$breekpunt4: 1200px;
+
+
+*{
+    padding: 0; 
+    margin: 0;
+    font-family: $fontset2;
+    box-sizing:border-box;
+}
+
+body{
+    color: $color1;
+    background-color: white;
+}
+
+                                                /* ABOUT.HTML*/
+
+.aboutimg{
+    margin-top: 30px;
+}
+
+.abouttxt{
+
+    margin-bottom: 80px;
+
+    @media (min-width: $breekpunt2) {
+        margin-top: 230px;
+    
+    }
+
+    h5{
+        margin-bottom: 40px;
+    }
+}
+
+                                                /* CROWD.HTML*/
+
+h5{
+    font-family: $fontset1;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 280;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: $color1;
+
+    @media (min-width: $breekpunt2) {
+        margin-top: 100px;
+        margin-bottom: 60px;
+    
+    }
+}
+
+.progress{
+    
+    margin-top: 10px;
+    margin-bottom: 1em;
+    background-color: $color4;
+    border-radius: 25px;
+    
+        .progress-bar{
+            background-color: $color2;
+            border-radius: 25px;
+        }
+}
+
+.supporters{
+    
+    margin-top: 20px;
+
+    @media (min-width: $breekpunt1) {
+        margin-top: 30px;
+    
+    }
+
+}
+
+.deadline{
+    
+    margin-top: 0px;
+
+    @media (min-width: $breekpunt2) {
+        margin-top: 20px;
+    
+    }
+}
+
+.bttndoneren{
+    .bttn{
+        width: 50%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+}
+
+.crowdfoto{
+    margin-bottom: 80px;
+    width: 98%;
+
+    @media (min-width: $breekpunt2){
+        margin-top: 30px;
+    }
+}
+
+                                                    /* HOME.HTML*/ 
+
+/* BACKGROUND IMG */
+
+.backgroundimg{
+    width: 100%;
+    height: 100%;
+    display:block;
+    margin-top: -60px;
+}
+
+/* COLFO */
+
+.logoo{
+    overflow:hidden;
+    height: 100%;
+    display:block;
+    width:60%;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -640px;        
+}
+
+                                                    /* NAVIGATIE */
+     
+li a {
+        display: block;
+        color:$color1;
+        font-weight: 300;
+        font-size: 0.7rem;
+        font-family: $fontset1;
+        letter-spacing: 0.7pt;
+        text-transform: uppercase;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+   
+        /* Change the link color on hover */
+li a:hover {
+        border-bottom: $color2;
+        color: white;
+        font-weight: 300;
+        text-decoration: none;
+        border-bottom: 1px solid $color2;
+      }
+
+a.activelink{
+        border-bottom: 1px solid $color2;
+    }
+
+.nav-link{
+        padding-right: 3em !important;
+    }
+    
+.navbar-light .navbar-nav .nav-link{
+        color: rgb(109, 106, 106);
+    }
+
+
+                                                    /* HULP.HTML*/ 
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.imggang{
+    width: 100%;
+    margin-top: 30px;
+
+    @media (min-width: $breekpunt2) {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 100%; 
+    }
+}
+
+p{
+    font-family: $fontset2;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: $color1;
+} 
+
+.inleiding{
+    font-family: $fontset3;
+    margin-top: 20px;
+    font-size:1.5rem;
+
+    @media (min-width: $breekpunt2) {
+        margin-top: 180px;   
+    }
+
+    @media (min-width: $breekpunt3) {
+        margin-top: 260px;   
+    }
+
+    @media (min-width: $breekpunt4) {
+        margin-top: 380px;   
+    }
+}
+
+
+.icon1{
+
+    @media (max-width: $breekpunt2) {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        margin-top: 40px;
+    }  
+
+    @media (min-width: $breekpunt2) {
+        width:70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (min-width: $breekpunt3) {
+        width:50%;  
+    }
+
+    @media (min-width: $breekpunt4) {
+        width:50%;  
+    }
+}
+
+.icon2{
+
+    @media (max-width: $breekpunt2) {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        margin-top: 25px;
+    }  
+
+    @media (min-width: $breekpunt2) {
+        width:70%; 
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    @media (min-width: $breekpunt3) {
+        width:50%; 
+    }
+
+    @media (min-width: $breekpunt4) {
+        width:50%; 
+    }
+}
+
+.grouptxt{
+        h3{
+        text-transform: uppercase;
+        color: $color2;
+        font-weight: 290;
+        text-align: center;
+        }
+
+        p{
+        color:$color2;
+        text-align: center;
+        }
+}
+
+
+h4{
+    text-transform: uppercase;
+    font-weight: 290;
+    text-align: left;
+    margin-top: 20px;
+    font-family: $fontset1;
+    font-size: 1.1em;
+
+    @media (min-width: 1500px) {
+        margin-left: -135px; 
+    }
+}
+
+.laatsterij{
+    margin-bottom: 70px;
+}
+
+.bttn{
+    text-decoration:none;
+    color: white;
+    display: block;
+    line-height: 45px;
+    text-align:center;
+    text-transform: uppercase;
+    font-family: $fontset1;
+    font-weight:280;
+    width: 100%;
+    background-color: $color2;
+    margin-top: 2em;
+    transition: all 1s;
+    font-size: 14px;
+
+}
+.bttn:hover{
+    text-decoration:none;
+    background-color: $color4;
+    color: $color2;
+    cursor:pointer;
+}
+
+                                                /* HULPGROEP.HTML*/ 
+.groups{
+    @media (min-width: $breekpunt2) {
+        margin-top: 50px;
+    }
+}
+
+.titelzelfhulp{
+    h5{
+        margin-bottom: 15px;
+        margin-top: 40px;
+    }
+
+    p{
+        margin-bottom: 40px;
+
+        @media (min-width: $breekpunt3) {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+
+                                                /* CONTACT.HTML*/
+    .align-center {
+        text-align: center;
+      }
+      
+      html {
+        height: 100%;
+      }
+      
+      body {
+        height: 100%;
+        position: relative;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .row .col {
+        padding: 0 20px;
+        float: left;
+        box-sizing: border-box;
+      }
+      .row .col.x-50 {
+        width: 50%;
+      }
+      .row .col.x-100 {
+        width: 100%;
+      }
+      
+      .content-wrapper {
+        min-height: 100%;
+        position: relative;
+      }
+      
+      .get-in-touch {
+        max-width: 650px;
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+      }
+      .get-in-touch .title {
+        text-align: center;
+        font-family: $fontset1;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 2rem;
+        line-height: 48px;
+        padding-bottom: 48px;
+      }
+      
+      .contact-form .form-field {
+        position: relative;
+        margin: 32px 0;
+      }
+      .contact-form .input-text {
+        display: block;
+        width: 100%;
+        height: 20px;
+        border-width: 0 0 1px 0;
+        border-color: #000;
+        font-family: $fontset2;
+        font-size: 1.1rem;
+        line-height: 26px;
+        font-weight: 300;
+      }
+      .contact-form .input-text:focus {
+        outline: none;
+      }
+      .contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+        -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+      }
+      .contact-form .label {
+        position: absolute;
+        left: 20px;
+        bottom: 11px;
+        font-family: $fontset2;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color:$color1;
+        cursor: text;
+        -webkit-transition: -webkit-transform .2s ease-in-out;
+        transition: -webkit-transform .2s ease-in-out;
+        transition: transform .2s ease-in-out;
+        transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+      }
+      .contact-form .bttn {
+        display: inline-block;
+        line-height: 30px;
+        padding: 8px 16px;
+        
+      }
+      
+      .note {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-family: Lusitana, serif;
+        font-size: 16px;
+        line-height: 21px;
+      }
+      .note .link {
+        color: #888;
+        text-decoration: none;
+      }
+      .note .link:hover {
+        text-decoration: underline;
+      }
+                                                  
+                                                        /* FOOTER*/  
+.site-footer {
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    background-color: $color4;
+    padding:0 25px;
+    bottom:0px;
+    width:100%;
+    height:50px;
+       
+    .textleft {
+            font-family: $fontset2;
+            font-weight: 300;
+            font-size: 0.8em;
+            color: $color1;
+            line-height:50px; 
+            margin-top: 0px; 
+    }
+    .right i {
+            margin-left:10px;
+            font-size:1em;
+            line-height:50px;
+            color: $color2;
+            margin-top: -15px; 
+            padding: 5px;
+    }
+
+    .right a{
+        text-decoration: none;
+    }
+  }
+
+
+  
+
+
+
+                                                      
+                                                                                                                 
